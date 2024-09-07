@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { GetUserQuery } from "../api/user";
 import { RiDiscussFill } from "react-icons/ri";
 import MeetingRoomIcon from "@mui/icons-material/MeetingRoom";
-import { CgProfile } from "react-icons/cg";
 import { MdDashboard } from "react-icons/md";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -344,27 +343,6 @@ const Leftbar = () => {
                   {/* <div className="text-sm font-light tracking-wide text-gray-500">
                     Settings
                   </div> */}
-                </div>
-              </li>
-              <li>
-                <div
-                  className={
-                    selected === "/user/profile"
-                      ? "border-zinc-700  bg-gray-50 relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent"
-                      : "relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6"
-                  }
-                >
-                  <span className="inline-flex justify-center items-center ml-4">
-                    <CgProfile className="text-xl" />
-                  </span>
-                  <span className="ml-2 text-sm tracking-wide truncate">
-                    <Link
-                      to="/user/profile"
-                      onClick={() => setSelected("/user/profile")}
-                    >
-                      Profile
-                    </Link>
-                  </span>
                 </div>
               </li>
               {/* <li>
