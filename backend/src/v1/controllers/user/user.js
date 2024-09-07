@@ -1,7 +1,11 @@
 import jwt from "jsonwebtoken";
 import { PrismaClient } from "@prisma/client";
 import { ZodError, z } from "zod";
+<<<<<<< HEAD
 import bcrypt from "bcryptjs";
+=======
+import bcrypt from "bcrypt";
+>>>>>>> 84822a6b2cd1eb97f5cd29a79808570a51992572
 import { NextFunction, Request, Response } from "express";
 import createError from "http-errors";
 import ms from "ms";
